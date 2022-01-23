@@ -1,0 +1,31 @@
+table{
+
+    width: 100%;/*para que la tabla ocupe todo el espacio horizontal*/
+}
+    table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;/*para que la tabla quede solo con las lineas correspondientes*/
+    padding: 5px;/*aplica 5px up-down-l-r*/
+}
+td{
+    /*para centrar texto de la tabla*/
+    text-align: center;
+}
+caption{
+    color:coral;/*color de fuente*/
+    font-family: Arial, Helvetica, sans-serif;/*tipo de fuente*/
+    font-size:30px ;/*tamaño de la fuente*/
+    line-height: 70px;/*margen en las 4 direcciones del titulo*/
+}
+th{
+    color:gold;
+    background-color: lightslategrey;
+}
+/*cambiar propiedades en renglones pares, el th cuenta como renglon 1*/
+tr:nth-child(even){
+    background-color: paleturquoise;
+}
+/*cambiar propiedades en renglones impares, el th cuenta como renglon 1*/
+tr:nth-child(odd){
+    background-color: peachpuff;
+}

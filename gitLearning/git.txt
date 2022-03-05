@@ -1,0 +1,66 @@
+Click derecho x sobre carpeta->git bach here
+$git init 
+enlazar carpeta al repositorio
+ 
+$git diff "Fichero A.txt"
+Compara lo que habia con lo que hay actualmente(rojo antes, verde actual)
+
+$git add "Fichero.txt" 
+agrega para poder hacer el commit
+
+$git commit -m "mensaje del commit" 
+para guardar el cambio con un mensaje sobre dicho cambio
+
+$git checkout -- "Fichero.txt"
+desace los cambios aplicados al fichero
+
+$git log 
+muestra el fichero actual mas datos del ql que hizo cambios
+
+$git pull
+actualizar el repositorio local al mas reciente
+
+Dato importante:
+Carpetas vacias para git es como que no existieran
+
+.gitignore 
+dentro de la carpeta de trabajo crear este archivo sin extension,
+escribir en el archivo nombres de archivos o carpetas
+que queremos ignorar, al ser ignoradas no se mostraran
+
+Ramas: una rama es una wea que puedes crear y que en ella puedes
+realizar cambios y solo esa rama se verá afectada
+ej: en mi rama principal master tengo 1 carpeta con un archivo,
+creo una rama RAMAX y en esa rama le añado 2 archivos a la carpeta
+y guardo los cambios, mi rama master seguirá con lo que tenía
+
+$git branch
+Lista de ramas, la que está en verde es la que utilizamos
+
+$git branch ramaX
+Crea una nueva rama
+
+$git checkout ramaX 
+cambia la rama actual por la escrita
+
+$git add . 
+agrega todos los cambios efectuados
+
+$git merge RAMAx
+Traspasa lo de RAMAx a la rama en la que estamos ahora
+
+$git branch -d RAMAx
+para eliminar la rama, la idea es pasar todo a una o unas pocas
+e ir eliminando weas
+
+gitHub
+
+$ git remote add origin https://github.com/UsuarioX/nombreRepositorio.git
+pegar en la consola para conectar repositorio local al remoto
+
+$ git push -u origin ramaX
+Enviar cambios de la rama al repositorio remoto
+
+
+$git clone https://github.com/enlaceQueApareceEnCodeEngithub/copiarypegarenconsola.git
+crea una copia local desde github

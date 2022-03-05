@@ -8,7 +8,7 @@ print("RuningSomething")
 $git init // Inicializa el repositorio
 
 $git add . // Agrega todos los archivos a la lista de cambios
-Este comando tambien se puede hacer en un archivo en espesifico.
+Este comando tambien se puede hacer en un archivo en especifico.
 
 $git commit -m "mensaje" // Agrega un comentario al commit y lo guarda
 En este comando es importante poner el -m "mensaje" ya que sino te mandara a la consola de vim.
